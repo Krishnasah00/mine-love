@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="title"></title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- <audio id="music" loop>
+      <source
+        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+      />
+    </audio> -->
+    <div class="container" id="container">
+      <h1 class="name"></h1>
+      <h2 class="love_from"></h2>
+      <div class="counter" id="counter"></div>
+      <img class="main-photo" />
+      <div class="typing" id="typing"></div>
+      <div class="btns">
+        <button onclick="startSurprise()">Tap for Magic 💕</button>
+      </div>
+      <div class="final-message" id="finalMessage"></div>
+      <div class="proposal" id="proposal">
+        <span class="valentine_msg"></span>
+        <div class="btns">
+          <button onclick="yesClicked()">YES 💖</button
+          ><button class="no_btn" id="noBtn" onclick="noClicked()">
+            NO 🙈
+          </button>
+        </div>
+      </div>
+
+      <div class="envelope-wrap" id="envelopeWrap">
+        <div class="envelope" id="envelope" onclick="openEnvelope()">💌</div>
+        <div style="font-size: 0.85rem">Tap the envelope</div>
+      </div>
+
+      <div class="secret" id="secret"></div>
+
+      <div class="memories">
+        <h3>Our Memories 📸</h3>
+
+        <div class="main-image">
+          <img class="org_img" />
+
+          <div class="memory-grid">
+            <div class="items"><img /></div>
+            <div class="items"><img /></div>
+            <div class="items"><img /></div>
+            <div class="items"><img /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./script.js"></script>
+</html>
