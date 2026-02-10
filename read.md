@@ -27,11 +27,9 @@ Can be shown randomly or sequentially
 ## Images
 
 Cover Image
-.main-photo → HTML element to display the main cover image
 
-const coverImg = "img0.jpg";
-changeCoverImg = document.querySelector(".main-photo");
-changeCoverImg.src = coverImg;
+coverImg -→ Visible on first
+main-photo → HTML element to display the main cover image
 
 ## Gallery Images
 
