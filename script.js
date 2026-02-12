@@ -29,17 +29,17 @@ const msgs = [
 ];
 
 /* ================= COVER IMAGE ================= */
-const coverImg = "../images/img0.jpg";
+const coverImg = "./images/img0.jpg";
 const changeCoverImg = document.querySelector(".main-photo");
 if (changeCoverImg) changeCoverImg.src = coverImg;
 
 /* ================= GALLERY IMAGES ================= */
 let imageList = [
-  "../images/img1.jpg",
-  "../images/img2.jpg",
-  "../images/img3.jpg",
-  "../images/img4.jpg",
-  "../images/img5.jpg",
+  "./images/img1.jpg",
+  "./images/img2.jpg",
+  "./images/img3.jpg",
+  "./images/img4.jpg",
+  "./images/img5.jpg",
 ];
 
 /* ================= TEXT CONTENT ================= */
