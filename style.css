@@ -44,8 +44,8 @@ h2 {
   line-height: 1.6;
 }
 img.main-photo {
-  width: 50%;
-  border-radius: 22px;
+  width: 90%;
+  border-radius: 25px;
   margin-bottom: 1.4rem;
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6);
 }
@@ -96,35 +96,25 @@ button:hover {
   margin-top: 3rem;
   text-align: center;
 }
-
 .memories h3 {
   color: #ffb6e6;
   margin-bottom: 1rem;
-}
-
-/* Main image wrapper */
+} /*
+Main image wrapper */
 .main-image {
   position: relative;
   display: inline-block;
 }
-
 .main-image img {
-  width: 500px;
-  max-width: 100%;
+  width: 100%;
+  border: 3px solid #fa3195;
   border-radius: 20px;
-  /* Add fade animation */
-  transition: opacity 0.5s ease;
   opacity: 1;
-}
-
-.org_img {
-  height: 500px !important;
-}
-
-/* Thumbnails */
+  transition: opacity 0.45s ease;
+} /* Thumbnails */
 .memory-grid {
   position: absolute;
-  bottom: -43px;
+  bottom: -90px;
   left: 81%;
   transform: translateX(-50%);
   display: flex;
@@ -132,13 +122,11 @@ button:hover {
   padding-bottom: 50px !important;
   padding-right: 175px !important;
 }
-
 .memory-grid .items {
-  width: 83px;
-  height: 85px;
+  width: 65px;
+  height: 65px;
   position: relative;
 }
-
 .memory-grid .items img {
   width: 100%;
   height: 100%;
@@ -147,14 +135,9 @@ button:hover {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-
-/* Optional: hover effect on thumbnails */
 .memory-grid .items img:hover {
-  transform: scale(1.05);
-}
-
-/* Main image wrapper */
-
+  transform: scale(1.2);
+} /* Envelope */
 .envelope {
   font-size: 3rem;
   cursor: pointer;
@@ -170,12 +153,46 @@ button:hover {
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.15);
   font-size: 1rem;
-}
+} /* ----------------------- Heart Animation
+----------------------- */
 .heart {
   position: absolute;
-  font-size: 22px;
-  animation: float 6s linear infinite;
+  width: 50px; /* default
+heart size */
+  height: 50px;
+  opacity: 0;
+  pointer-events: none; /* hearts won't
+block clicks */
+  animation: heartUp 1.4s ease-in forwards;
+  z-index: 999; /* on
+top of everything */
 }
+.heart svg {
+  width: 100%;
+  height: 100%;
+  fill: #f58d9c; /*
+heart color */
+} /* Heart floating animation keyframes */
+@keyframes heartUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) rotate(10deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+    transform: translate3d(0, -35vh, 0) scale(1.2) rotate(-10deg);
+  }
+  100% {
+    opacity: 0;
+  }
+} /* Other existing animations
+*/
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -193,19 +210,6 @@ button:hover {
   }
   100% {
     transform: scale(1.3) rotate(-10deg);
-  }
-}
-@keyframes float {
-  0% {
-    transform: translateY(100vh);
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-10vh);
-    opacity: 0;
   }
 }
 @keyframes fadeIn {
