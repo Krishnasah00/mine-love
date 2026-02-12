@@ -99,8 +99,8 @@ button:hover {
 .memories h3 {
   color: #ffb6e6;
   margin-bottom: 1rem;
-} /*
-Main image wrapper */
+}
+/*Main image wrapper */
 .main-image {
   position: relative;
   display: inline-block;
@@ -111,7 +111,8 @@ Main image wrapper */
   border-radius: 20px;
   opacity: 1;
   transition: opacity 0.45s ease;
-} /* Thumbnails */
+}
+/* Thumbnails */
 .memory-grid {
   position: absolute;
   bottom: -90px;
@@ -137,7 +138,8 @@ Main image wrapper */
 }
 .memory-grid .items img:hover {
   transform: scale(1.2);
-} /* Envelope */
+}
+/* Envelope */
 .envelope {
   font-size: 3rem;
   cursor: pointer;
@@ -172,7 +174,8 @@ top of everything */
   height: 100%;
   fill: #f58d9c; /*
 heart color */
-} /* Heart floating animation keyframes */
+}
+/* Heart floating animation keyframes */
 @keyframes heartUp {
   0% {
     opacity: 0;
