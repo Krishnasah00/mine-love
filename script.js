@@ -3,6 +3,7 @@ const mainName = "Manika";
 const loveFrom = "Rabindra";
 const startDate = new Date("2020-03-27T00:00:00");
 const finalMsg = `I Love You ${mainName} ❤️`;
+const bgMusic = document.getElementById("music");
 
 const loveMessage =
   "my heart chose you. Every second has only made that choice stronger.";
@@ -169,6 +170,14 @@ function yesClicked() {
 
   secret.innerHTML =
     "💍 SHE SAID YES 💍<br /><br />Forever officially begins now ❤️";
+
+  // ❤️ Start background music
+  if (bgMusic) {
+    bgMusic.volume = 0.5; // optional (0.0 – 1.0)
+    bgMusic.play().catch(() => {
+      console.log("Music play blocked until user interaction");
+    });
+  }
 
   // Start continuous hearts
   startHearts();
